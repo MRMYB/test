@@ -22,6 +22,7 @@ public class App {
 	@Bean
 	public ServletRegistrationBean servletRegistrationBean() {
 		ServletRegistrationBean bean=new ServletRegistrationBean(new SecondServlet());
+        System.out.println("ServletRegistrationBean创建");
 		bean.addUrlMappings("/secondServlet");
 		return bean;
 		
